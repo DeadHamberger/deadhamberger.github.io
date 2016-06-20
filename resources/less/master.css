@@ -1,8 +1,10 @@
 .menu {
   background-color: #36bbce;
   margin-top: 0px ;
+  height: 40px;
+  width: 100%;
 }
 body {
-  margin: 0	;
+  margin: 0px	;
   background-color: #123;
 }
