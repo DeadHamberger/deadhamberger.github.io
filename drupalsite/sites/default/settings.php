@@ -285,7 +285,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = '8vXePHf4KX4QU-Tk6x0SPG_5AzUAiLuvsaHSt1gUHXoQlf4IeUobJ9ih6SM__K5ZY3EDT6mUkA';
 
 /**
  * Deployment identifier.
@@ -725,3 +725,15 @@ if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['D
   require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/loc_drupaslsitesrc_dd.inc';
 }
 // </DDSETTINGS>
+$databases['default']['default'] = array (
+  'database' => 'drupaldatabase',
+  'username' => 'drupaluser',
+  'password' => '',
+  'prefix' => '',
+  'host' => '127.0.0.1',
+  'port' => '33067',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['install_profile'] = 'standard';
+$config_directories['sync'] = 'sites/drupaslsitesrc.dd/files/config_47iS2XZGXjcQUvzCBUE5EfxAvXZzGB1O5uuD5m4fPR6kSU2dWJGcgeOeJl91nLoqYagqL5XBdA/sync';
