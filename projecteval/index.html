@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--Test if this is not in master branch :)-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Evaluation</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="./css.css" media="screen" title="no title" charset="utf-8">
+		<script src="js.js"></script>
+
+	</head>
+	<body>
+
+	    <div class="container">
+	        <h1>Project Evaluation</h1>
+	    	<!-- row 1 -->
+	    	<div class="row">
+				<div class="form-group col-md-6">
+					<label for="client_name">Client Name</label>
+					<input type="text" class="form-control" id="client_name" placeholder="A Great Client, Inc.">
+				</div>
+
+				<div class="form-group col-md-6">
+					<label for="project_name">Project Name</label>
+					<input type="text" class="form-control" id="project_name" placeholder="SomeSite.com Redesign">
+				</div>
+			</div>
+
+			<!-- row 2 -->
+	    	<div class="row">
+				<div class="form-group col-md-6">
+					<label for="stage">Stage of Evaluation</label>
+					<select class="form-control" id="stage">
+						<option selected="selected"></option>
+						<option>Opportunity Received (RFP, Enquiry, etc.)</option>
+						<option>Sales Discovery Completed</option>
+						<option>Proposal Submitted or Presented</option>
+						<option>Project Kick Off</option>
+						<option>Design Completed</option>
+						<option>Development Completed</option>
+						<option>Launch Completed/Support Started</option>
+						<option>3 months into Support</option>
+						<option>6 months into Support</option>
+						<option>1 year into Support</option>
+						<option>2 years into Support</option>
+					</select>
+				</div>
+				<div class="form-group col-md-6">
+					<label for="date">Date of Evaluation</label>
+					<input type="text" class="form-control" id="date">
+				</div>
+			</div>
+
+			<!-- row 3 -->
+	    	<div class="row">
+				<div class="form-group col-md-4">
+					<label for="budget_guess"><em>Really</em> rough guess at a budget</label>
+					<div class="input-group">
+					  <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control text-right" id="budget_guess" placeholder="25,000">
+					  <div class="input-group-addon">.00</div>
+					</div>
+				</div>
+				<div class="form-group col-md-4">
+					<label for="time_guess"><em>Really</em> rough guess at time to complete</label>
+					<div class="input-group">
+					  <input type="text" class="form-control text-right" id="time_guess" placeholder="8">
+					  <div class="input-group-addon">weeks</div>
+					</div>
+				</div>
+				<div class="form-group col-md-4">
+					<label for="people_guess"><em>Really</em> rough guess at number of people needed</label>
+					<div class="input-group">
+					  <input type="text" class="form-control text-right" id="people_guess" placeholder="4">
+					  <div class="input-group-addon">people</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-10">
+					<h2>Statements</h2>
+			        <p class="lead">Use the information you have on hand <em>right now</em> to rate the following:</p>
+		        </div>
+		        <div class="form-group  form-group-lg col-md-2">
+					<label for="go_no_go">Go/no-go</label>
+
+					<div class="input-group">
+					  <span class="form-control text-right" id="go_no_go">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					</div>
+		        </div>
+	        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="row">
+			 	<table class="table table-striped table-condensed">
+			 		<tr>
+			 			<th class="col-md-5"></th>
+			 			<th class="col-md-1 text-center">
+			 				Strongly disagree
+		 				</th>
+			 			<th class="col-md-1 text-center">
+			 				Disagree
+		 				</th>
+			 			<th class="col-md-1 text-center">
+			 				Somewhat disagree
+			 			</th>
+			 			<th class="col-md-1 text-center">
+			 				Neither agree nor disagree
+			 			</th>
+			 			<th class="col-md-1 text-center">
+			 				Somewhat agree
+			 			</th>
+			 			<th class="col-md-1 text-center">
+			 				Agree
+			 			</th>
+			 			<th class="col-md-1 text-center">
+			 				Strongly agree
+		 				</th>
+					</tr>
+
+
+
+
+					<tr>
+			 			<td class="col-md-5 text-right">
+			 				<p>I know enough about the project to estimate it and write a proposal.</p>
+		 				</td>
+
+							<td colspan="7"> <input min="0" max="100" type="range" class="answer" name="stmt_1"> </td>
+
+					</tr>
+					<tr>
+			 			<td class="col-md-5 text-right">
+			 				<p>We have the experience and skills to deliver this project.</p>
+		 				</td>
+			 			<td colspan="7"> <input min="0" max="100" type="range" class="answer" name="stmt_2"> </td>
+					</tr>
+					<tr>
+						<td class="col-md-5 text-right">
+							<p>The project is a good fit for the technologies we use</p>
+						</td>
+						<td colspan="7"> <input min="0" max="100" type="range" class="answer" name="stmt_3"> </td>
+					</tr>
+
+					<!-- Start of selection aera-->
+					<tr>
+						<td class="col-md-5 text-right">
+							<p>The procurement process is reasonable for the project size
+
+</p>
+						</td>
+						<td colspan="7"> <input min="0" max="100" type="range" class="answer" name="stmt_4"> </td>
+					</tr>
+					<!-- end of selection aera-->
+					<!-- Start of selection aera-->
+					<tr>
+						<td class="col-md-5 text-right">
+							<p>The project delivery timescale is reasonable
+
+</p>
+						</td>
+						<td colspan="7"> <input min="0" max="100" type="range" class="answer" name="stmt_5"> </td>
+					</tr>
+					<!-- end of selection aera-->
+					<!-- Start of selection aera-->
+					<tr>
+						<td class="col-md-5 text-right">
+							<p>The project is financially viable (budget, billing timetable, payment terms)
+
+
+
+</p>
+						</td>
+						<td colspan="7"> <input min="0" max="100" type="range" class="answer" name="stmt_6"> </td>
+					</tr>
+					<!-- end of selection aera-->
+					<!-- Start of selection aera-->
+					<tr>
+						<td class="col-md-5 text-right">
+							<p>The client is experienced in, committed to, or open to, Agile working
+
+
+
+</p>
+						</td>
+						<td colspan="7"> <input min="0" max="100" type="range" class="answer" name="stmt_7"> </td>
+					</tr>
+					<!-- end of selection aera-->
+					<!-- Start of selection aera-->
+					<tr>
+						<td class="col-md-5 text-right">
+							<p>We have the right people available for the dates</p>
+						</td>
+						<td colspan="7"> <input min="0" max="100" type="range" class="answer" name="stmt_8"> </td>
+					</tr>
+					<!-- end of selection aera-->
+					<!-- Start of selection aera-->
+					<tr>
+						<td class="col-md-5 text-right">
+							<p>We can show convincing evidence of our suitability for the project and client</p>
+						</td>
+						<td colspan="7"> <input min="0" max="100" type="range" class="answer" name="stmt_9"> </td>
+					</tr>
+					<!-- end of selection aera-->
+					<!-- Start of selection aera-->
+					<tr>
+						<td class="col-md-5 text-right">
+							<p>We can show convincing evidence of our suitability for the project and client</p>
+						</td>
+						<td colspan="7"> <input min="0" max="100" type="range" class="answer" name="stmt_10"> </td>
+					</tr>
+					<!-- end of selection aera-->
+					<!-- Start of selection aera-->
+					<tr>
+						<td class="col-md-5 text-right">
+							<p>The client is a good fit (strategy, culture, values, location, ways of working etc)</p>
+						</td>
+						<td colspan="7"> <input min="0" max="100" type="range" class="answer" name="stmt_11"> </td>
+					</tr>
+					<!-- end of selection aera-->
+					<!-- Start of selection aera-->
+					<tr>
+						<td class="col-md-5 text-right">
+							<p>It's a client we'd be proud to say we work with</p>
+						</td>
+							<td colspan="7"> <input min="0" max="100" type="range" class="answer" name="stmt_12"> </td>
+					</tr>
+					<!-- end of selection aera-->
+					<!-- Start of selection aera-->
+					<tr>
+						<td class="col-md-5 text-right">
+							<p>We have a relationship with a good contact at the client already</p>
+						</td>
+						<td colspan="7"> <input min="0" max="100" type="range" class="answer" name="stmt_13"> </td>
+					</tr>
+					<!-- end of selection aera-->
+					<!-- Start of selection aera-->
+					<tr>
+						<td class="col-md-5 text-right">
+							<p>It's an opportunity to produce something great</p>
+						</td>
+							<td colspan="7"> <input min="0" max="100" type="range" class="answer" name="stmt_14"> </td>
+					</tr>
+					<!-- end of selection aera-->
+					<!-- Start of selection aera-->
+					<tr>
+						<td class="col-md-5 text-right">
+							<p>There is an opportunity for a long term relationship</p>
+						</td>
+						<td colspan="7"> <input min="0" max="100" type="range" class="answer" name="stmt_15"> </td>
+					</tr>
+					<!-- end of selection aera-->
+					<!-- Start of selection aera-->
+					<tr>
+						<td class="col-md-5 text-right">
+							<p>We are likely to win this (1 more level of agreement for about 15% more chance of winning)</p>
+						</td>
+						<td colspan="7"> <input min="0" max="100" type="range" class="answer" name="stmt_16"> </td>
+					</tr>
+					<!-- end of selection aera-->
+					<!-- Start of selection aera-->
+					<tr>
+						<td class="col-md-5 text-right">
+							<p>I really think we should do this project (complete personal gut feel)</p>
+						</td>
+						<td colspan="7"> <input min="0" max="100" type="range" class="answer" name="stmt_17"> </td>
+					</tr>
+					<!-- end of selection aera-->
+				</table>
+			</div>
+
+			</div>
+
+			 	</table>
+			</div>
+
+			</table>
+			</div>
+
+	    </div><!-- /.container -->
+
+	</body>
+</html>
