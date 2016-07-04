@@ -19,3 +19,7 @@ body {margin: 10px;}
 	border-color: #EEE;
 	font-size: 30px;
 }
+
+.no {color: #F22;}
+.maybe {color:#FF2;}
+.yes {color: #2F2;}
