@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src='./js.js'></script>
+		<link rel="stylesheet" href="./main.css" media="screen" charset="utf-8">
+		<meta charset="utf-8">
+		<title>MacDonalds</title>
+	</head>
+	<body>
+
+		<div class="menu"><button class="resetBtn" onclick="js:window.location.href='index.html'">Reset</button><button class="resetBtn" onclick="addOrder();">Add order</button></div>
+		<div class="orderItems">
+
+			<button class='foodItem' onclick="add('French fries |');addMoney(2.00)">French Fries</button><br>
+				<button class='foodItem' onclick="add('Big Mac |');addMoney(4.00);">Big mac</button>          <br>
+					<button class='foodItem' onclick="add('Mac Nuggets |');addMoney(3.00);">Mac nuggets</button>  <br>
+						<button class='foodItem' onclick="add('Soda |');addMoney(1.20);">Soda</button>                 <br>
+							<button class='foodItem'onclick="add('Cheese burger |');addMoney(1.15);">Cheese Burger</button> <br>
+								<button class='foodItem'onclick="add('Hamburger |');addMoney(0.99);">Hamburger</button>     <br>
+							<button class='foodItem' onclick="add('Ketchup |');addMoney(0.22);">Ketchup</button>        <br>
+						<button class='foodItem' onclick="add('Mac Latte |');addMoney(2.00);">Mac latte</button>    <br>
+					<button class='foodItem' onclick="add('Mac Coffee |');addMoney(1.20);">Mac Coffee</button>  <br>
+				<button class='foodItem' onclick="add('Mac Pancake |');addMoney(1.20);">Mac Pancake</button><br>
+			<button class='foodItem' onclick="add('TO GO |');">TO go</button>                          <br>
+		<button class='foodItem' onclick="add('COUCH MEAL |');">COUCH MEAL</button>                <br>
+
+		</div>
+		<div id='fullOrder'>
+
+			<span id="name"></span>
+
+		<div class="order" id="order">
+
+			<div class="items" id='items'></div>
+
+			<input type="text" name="name" id="nameIn" autocomplete="off" placeholder="Name"value="">
+
+		</div>
+
+		$
+		<p id='total'>0.00</p>
+
+	</div>
+
+	<div class="orders" id='orders'>
+
+		</div>
+	</body>
+
+</html>
