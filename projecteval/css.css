@@ -23,3 +23,8 @@ body {margin: 10px;}
 .no {color: #F22;}
 .maybe {color:#FF2;}
 .yes {color: #2F2;}
+
+#statements {
+
+	position: fixed;
+}
