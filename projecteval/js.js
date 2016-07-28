@@ -32,11 +32,27 @@ $(function() {
 		}
 		if (average>threshold_lower && average<threshold_upper) {
 			$('#go_no_go').addClass("maybe");
-		}		
+		}
 		if (average<=threshold_lower) {
 			$('#go_no_go').addClass("no");
-		}		
+		}
 
 	});
 
 });
+
+function copytext() {
+
+	var client_name = $('#client_name').value;
+	var project_name = $('#project_name').value;
+	var eval_stage = $('#stage').value;
+	var date = $('#date').value;
+	var buget_guess = $('#buget_guess').value;
+	var time_guess = $('#time_guess').value;
+	var people_guess = $('#people_guess').value;
+
+	var final_copy = "Client Name: " + client_name + `\n` + "Project Name: " + project_name;
+	$('#test').text=final_copy;
+
+
+}
