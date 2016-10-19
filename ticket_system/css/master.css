@@ -54,3 +54,14 @@ html {
 	border-color: #FFF;
 }
 
+.seat-button {
+	background-color:#AAF;
+	font-size: 15px;
+	margin-top:3vh;
+	border-color: #00E;
+	border-width: 15px;
+	border-collapse: collapse;
+	width: 150px;
+	height: 150px;
+}
+
