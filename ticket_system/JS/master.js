@@ -20,6 +20,11 @@ function seat_selector(seat_num) {
 
 	var ticketNum = window.prompt('Ticket number', '146462');
 	var name = window.prompt('Name', 'Edwardo')
-	document.getElementById(seat_num).innerHTML= "SEAT " + seat_num + " IS RESERVED BY " + name + "TICKET NUM: " + ticketNum;
+	document.getElementById(seat_num).innerHTML= "SEAT " + seat_num + " IS RESERVED BY " + name + " TICKET NUM: " + ticketNum;
 
+}
+
+function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
 }

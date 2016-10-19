@@ -56,12 +56,12 @@ html {
 
 .seat-button {
 	background-color:#AAF;
-	font-size: 15px;
+	font-size: 13px;
 	margin-top:3vh;
 	border-color: #00E;
 	border-width: 15px;
 	border-collapse: collapse;
-	width: 150px;
-	height: 150px;
+	width: 160px;
+	height: 160px;
 }
 
